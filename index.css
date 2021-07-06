@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar{
+    display: flex;
+    height: 15vh;
+    width: 100vw;
+    border: 2px solid green;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
+.filters{
+    
+    margin-top: calc( ( 25 / 100 ) * 15vh );
+    height: 50%;
+    border: 1px solid;
+    width: 16vw;
+    margin-left: 10vw;
+    margin-right: 15vw;
+     display: flex;
+}
+.action-buttons{
+     margin-top: calc( ( 25 / 100 ) * 15vh );
+    height: 50%;
+    border:  1px solid rgb(2, 2, 2);
+    display: flex;
+ 
+    width: 10vw;
+  
+}
+
+.add, .delete{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    border: 1px solid;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    font-size: 35px;
+}
+.add{
+    font-size: 40px;
+}
+.add:hover , .delete:hover , .delete-selected{
+    background-color: rgb(46, 0, 155);
+}
+.grid{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(255, 199, 250, 0.322);
+    height: 85vh;
+    width: 100vw;
+}
+.filter{
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 25%;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.filter:hover{
+    background-color: rgb(0, 238, 255);
+}
+
+.filter div{
+    height: 80%;
+    width: 80%;
+    border:  1px solid;
+    border-radius: 8px;
+}
+.pink{
+    background-color: rgb(241, 57, 88);
+}
+.blue{
+    background-color: blue
+}
+.green{
+    background-color: green;
+}
+.black{
+    background-color: black;
+}
+.modal{
+    height: 20rem;
+    display: flex;
+    width: 35rem;
+    position: fixed;
+    top: 20vh;
+    /* ye left wala 50% jo hai wo body ki width ka hai  */
+    left: 50%;
+    /* ye translate wala jo 50% hai wo khudke element ka hai  */
+    transform: translateX(-50%);
+}
+
+
+.filterselect{
+  background-color: blanchedalmond;
+}
+
+
+.task-section{
+  height: 100%;
+  width: 70%;
+  border: 2px solid;
+  background-color: #f8a5c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-inner-container{
+    overflow: auto;
+  height: 80%;
+  width: 80%;
+  background-color: #f1f2f6;
+}
+
+.modal-priority-section{
+    background-color: #4b6584;
+  height: 100%;
+  width: 30%;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.priority-inner-container{
+    background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80%;
+  width: 60%;
+  border: 1px solid;
+}
+
+.modal-priority{
+  width: 80%;
+  height: 22%;
+
+}
+
+.modal-priority:hover {
+  border: 5px solid #7f8c8d;
+}
+
+.selected {
+  border: 5px solid #7f8c8d;
+}
+.ticket{
+    margin: 10px;
+  height: 12rem;
+  width: 20rem;
+  border: 1px solid;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ticket-color{
+  width: 100%;
+  height: 8%;
+}
+
+.ticket-id{
+  width: 100%;
+  height: 16%;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.actual-task{
+  width: 100%;
+  height: 76%;
+  padding: 10px;
+  background-color: #f7f1e3;
+}
